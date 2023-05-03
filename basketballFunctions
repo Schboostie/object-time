@@ -1,0 +1,50 @@
+
+
+function getPlayerAchievements(basketballPlayers) {
+  const playersAchievements = [];
+
+  for (let player in basketballPlayers) {
+    const playerData = basketballPlayers[player];
+    const playerAchievements = playerData.achievements.length;
+    const playerName = playerData.name;
+    playersAchievements.push({ name: playerName, achievements: playerAchievements });
+  }
+
+  return playersAchievements;
+}
+/*
+[
+  { name: 'LeBron James', achievements: 3 },
+  { name: 'Stephen Curry', achievements: 3 },
+  { name: 'Kevin Durant', achievements: 3 },
+  { name: 'Giannis Antetokounmpo', achievements: 3 }
+]
+
+*/
+
+function getPlayerPositions(basketballPlayers) {
+  const positions = [];
+
+  for (let player in basketballPlayers) {
+    const playerData = basketballPlayers[player];
+    const position = playerData.position;
+    positions.push(position);
+  }
+
+  return positions;
+}
+
+
+//Done as above but used filter
+
+function getPlayerPositions(basketballPlayers) {
+  const positions = [];
+
+  Object.values(basketballPlayers).filter(player => {
+    const position = player.position;
+    positions.push(position);
+  });
+
+  return positions;
+}
+
