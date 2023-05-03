@@ -1,0 +1,29 @@
+function rotateGallery(pokemonArr) {
+  let currentIndex = 0;
+  let maxIndex = pokemonArr.length - 1;
+
+  const galleryElement = document.getElementById("gallery");
+
+  function updateGallery() {
+    galleryElement.innerHTML = `<img src="${pokemonArr[currentIndex].image}" alt="${pokemonArr[currentIndex].name}">`;
+    currentIndex = (currentIndex === maxIndex) ? 0 : currentIndex + 1;
+  }
+
+  setInterval(updateGallery, 3000);
+}
+
+rotateGallery(pokemonArr);
+
+/*#gallery img {
+  transition: opacity 0.5s ease-in-out;
+  display:flex;
+}
+
+#gallery img:hover {
+  opacity: 1.7;
+  width:300px
+}
+
+<div id="gallery"></div>
+
+*/
