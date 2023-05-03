@@ -1,0 +1,42 @@
+const topSoccerPlayers = {
+  LionelMessi: {
+    name: 'Lionel Messi',
+    country: 'Argentina',
+    position: 'Forward',
+    yearsActive: '2004-2023',
+    clubs: ['Barcelona'],
+    achievements: ['7x Ballon d\'Or winner', '4x Champions League winner']
+  },
+  CristianoRonaldo: {
+    name: 'Cristiano Ronaldo',
+    country: 'Portugal',
+    position: 'Forward',
+    yearsActive: '2002-2023',
+    clubs: ['Manchester United', 'Real Madrid', 'Juventus'],
+    achievements: ['5x Ballon d\'Or winner', '5x Champions League winner']
+  },
+  ZinedineZidane: {
+    name: 'Zinedine Zidane',
+    country: 'France',
+    position: 'Midfielder',
+    yearsActive: '1988-2006',
+    clubs: ['Juventus', 'Real Madrid'],
+    achievements: ['3x FIFA World Player of the Year', '3x Champions League winner']
+  },
+  DiegoMaradona: {
+    name: 'Diego Maradona',
+    country: 'Argentina',
+    position: 'Forward',
+    yearsActive: '1976-1997',
+    clubs: ['Boca Juniors', 'Barcelona', 'Napoli'],
+    achievements: ['FIFA World Cup winner', '2x Serie A winner']
+  },
+  Ronaldinho: {
+    name: 'Ronaldinho',
+    country: 'Brazil',
+    position: 'Forward',
+    yearsActive: '1998-2015',
+    clubs: ['Paris Saint-Germain', 'Barcelona', 'AC Milan'],
+    achievements: ['2x FIFA World Player of the Year', '2x La Liga winner']
+  }
+};
